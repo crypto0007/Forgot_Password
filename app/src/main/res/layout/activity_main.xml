@@ -8,15 +8,30 @@
     android:scrollbars="vertical">
 
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/battom_naavigation"
+        app:labelVisibilityMode="labeled"
+        app:itemIconSize="24dp"
+        android:scaleType="center"
+        android:layout_alignParentBottom="true"
+        app:itemTextAppearanceActive="@style/Theme.Forgot_Password"
+         />
 
-        <com.ismaeldivita.chipnavigation.ChipNavigationBar
-            android:id="@+id/bottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:cnb_menuResource="@menu/battom_naavigation"
-            android:layout_alignParentBottom="true"
-            />
+<!--        <com.ismaeldivita.chipnavigation.ChipNavigationBar-->
+<!--            android:id="@+id/bottom"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:cnb_menuResource="@menu/battom_naavigation"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:background="?android:attr/windowBackground"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:itemIconSize="24dp"-->
+<!--            android:scaleType="center"-->
+<!--            />-->
 
     <FrameLayout
         android:id="@+id/container"
