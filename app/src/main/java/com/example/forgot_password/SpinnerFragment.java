@@ -70,7 +70,7 @@ public class SpinnerFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_spinner, container, false);
 
         String [] values =
-                {"Time at Residence","Under 6 months","6-12 months","1-2 years","2-4 years","4-8 years","8-15 years","Over 15 years",};
+                {"Adoni","Agartala","Ahmedabad","Bangalore","Bhopal","Bhubaneswar","Chandigarh","Chandigarh","Chennai","Dehradun","Delhi","Gandhinagar","Gangtok","Vadodara","Warangal","Yamunanagar"};
         Spinner spinner = (Spinner) v.findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_spinner_item, values);
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);

@@ -1,28 +1,44 @@
 package com.example.forgot_password;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {
-    Button  stbbtn;
+    private Fragment fragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        stbbtn = findViewById(R.id.submit_button);
+        ChipNavigationBar chipNavigationBar = findViewById(R.id.bottom);
 
-        stbbtn.setOnClickListener(new View.OnClickListener() {
+        chipNavigationBar.setItemSelected(R.id.fpbm_id, true);
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
 
+        chipNavigationBar.setOnItemSelectedListener(new com.ismaeldivita.chipnavigation.ChipNavigationBar.OnItemSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent in = new Intent(getBaseContext(), searchable_spinner.class);
-                startActivity(in);
+            public void onItemSelected(int i) {
+                switch (i) {
+                    case R.id.fpbm_id:
+                        fragment = new HomeFragment();
+                        break;
+                    case R.id.otpbm_id:
+                        fragment = new OTPFragment();
+                        break;
+                    case R.id.spinnerbm_id:
+                        fragment = new SpinnerFragment();
+                        break;
+
+                }
+
+                if (fragment != null) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
+                }
             }
         });
     }
