@@ -1,0 +1,9 @@
+<resources>
+    <string name="hello_world">Hello Round World!</string>
+    <string name="otp">OTP</string>
+    <string name="enter_the_otp">Enter the OTP</string>
+    <string name="lock">Lock</string>
+    <string name="home">Home</string>
+    <string name="change_password">Change Password</string>
+    <string name="spinner">Spinner</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fpbm_id"
+        android:icon="@drawable/ic_fp"
+        android:title="@string/forgot_password"
+        app:cnb_iconColor="@color/home"/>
+    <item
+        android:id="@+id/otpbm_id"
+        android:icon="@drawable/ic_otp2"
+        android:title="@string/otp"
+        app:cnb_iconColor="@color/activity"/>
+    <item
+        android:id="@+id/spinnerbm_id"
+        android:icon="@drawable/ic_dropdown2"
+        android:title="@string/spinner"
+        app:cnb_iconColor="@color/favorites" />
+
+</menu>
