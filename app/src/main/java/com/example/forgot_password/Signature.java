@@ -114,8 +114,8 @@ public class Signature extends AppCompatActivity {
         ch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent in = new Intent(MainActivity.this, Main.class);
-                //startActivity(in);
+                Intent in = new Intent(Signature.this, converttobase64.class);
+                startActivity(in);
             }
         });
 
