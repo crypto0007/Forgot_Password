@@ -20,4 +20,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <string name="agreement">I agree the terms and conditions.</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="ch">CH</string>
+    <string name="convert">Convert</string>
+
 </resources>
